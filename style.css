@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Montserrat:wght@100&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --darkgray: rgb(90, 90, 90);
+    --green: rgb(0, 229, 255);
+    --grey: rgb(185, 185, 185);
+    --lightgrey: rgb(237, 237, 237);
+    --maxwidth: 1200px;
+}
+
+body{
+    background-color: white;
+    margin-top: 0;
+    font-family:'Nunito Sans', sans-serif;
+    
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.container{
+    width: 70%;  
+    max-width: var(--maxwidth);  
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    padding-top: 2rem;
+}
+
+header{
+    background-color: white;
+    color: var(--darkgray);
+    border: 1px solid var(--grey);
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+nav{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    padding-top: 2rem;
+
+}
+
+nav a{
+    border-top: 1px solid var(--grey);
+    border-left: 1px solid var(--grey) ;
+    border-right: 1px solid var(--grey) ;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--darkgray);
+    margin-right: 10px;
+    font-size:  large;
+    text-transform: uppercase;
+    background-color: var(--lightgrey);
+    transition: ease-in-out .1s;
+
+}
+
+nav a.active{
+    background-color: var(--green);
+    color: white;
+    border-color: var(--green);
+
+}
+
+nav a:hover{
+    background-color: var(--grey);
+    color: white;
+    border-color: var(--grey);
+}
+
+main{
+    border-bottom: 1px solid var(--grey);
+    border-left: 1px solid var(--grey) ;
+    border-right: 1px solid var(--grey) ;
+    border-top: 7px solid var(--green);
+    background-color: white;
+    color: var(--darkgray);
+    padding-left: 1rem;
+    padding-right: 11rem;
+    padding-bottom: 5rem;
+}
+
+ul li a{
+    color: var(--green);
+    transition: ease-in-out .1s;
+}
+
+ul li a:hover{
+    color: var(--darkgray);
+}
+
+.a::marker{
+    color: var(--grey);
+}
